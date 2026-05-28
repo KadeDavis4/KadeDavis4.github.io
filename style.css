@@ -126,7 +126,8 @@
  
     /* ── Section shared ── */
     .section {
-      padding: 2.5rem 2rem;
+      padding: 1.5rem 2rem;
+      padding-top: 0.5rem;
     }
  
     .section-title {

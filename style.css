@@ -1,0 +1,249 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --bg:        #ffffff;
+      --bg-subtle: #f6f6f4;
+      --text:      #1a1a1a;
+      --text-muted:#6b6b6b;
+      --text-faint:#999999;
+      --border:    #e5e5e5;
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+    }
+ 
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+ 
+    /* ── Navigation ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
+    }
+ 
+    .nav-logo {
+      font-size: 15px;
+      font-weight: 500;
+    }
+ 
+    .nav-links {
+      display: flex;
+      gap: 4px;
+    }
+ 
+    .nav-links a {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: var(--radius-md);
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+ 
+    .nav-links a:hover {
+      background: var(--bg-subtle);
+      color: var(--text);
+    }
+ 
+    .nav-links a.active {
+      border-color: var(--border);
+      color: var(--text);
+    }
+ 
+    /* ── Hero ── */
+    .hero {
+      padding: 4rem 2rem 3rem;
+      max-width: 680px;
+    }
+ 
+    .hero-label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+    }
+ 
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+ 
+    .hero p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 520px;
+    }
+ 
+    .contact-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+ 
+    .contact-row a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: all 0.15s ease;
+    }
+ 
+    .contact-row a:hover {
+      border-color: #bbb;
+      color: var(--text);
+      background: var(--bg-subtle);
+    }
+ 
+    /* ── Divider ── */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 0 2rem;
+    }
+ 
+    /* ── Section shared ── */
+    .section {
+      padding: 2.5rem 2rem;
+    }
+ 
+    .section-title {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 1.25rem;
+    }
+ 
+    /* ── Skills ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+ 
+    .skill-card {
+      background: var(--bg-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+    }
+ 
+    .skill-card-label {
+      font-size: 11px;
+      color: var(--text-faint);
+      margin-bottom: 4px;
+    }
+ 
+    .skill-card-items {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+ 
+    /* ── Project cards ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+ 
+    .project-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease;
+      display: block;
+    }
+ 
+    .project-card:hover {
+      border-color: #bbb;
+    }
+ 
+    .project-card-icon {
+      font-size: 20px;
+      color: var(--text-faint);
+      margin-bottom: 10px;
+    }
+ 
+    .project-card-title {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+ 
+    .project-card-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+ 
+    /* ── Downloads ── */
+    .download-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+ 
+    .download-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-family: 'DM Sans', sans-serif;
+      padding: 7px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: transparent;
+      cursor: pointer;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }
+ 
+    .download-btn:hover {
+      border-color: #bbb;
+      color: var(--text);
+      background: var(--bg-subtle);
+    }
+ 
+    /* ── Footer ── */
+    footer {
+      padding: 1.5rem 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 1rem;
+    }
+ 
+    footer p {
+      font-size: 12px;
+      color: var(--text-faint);
+    }

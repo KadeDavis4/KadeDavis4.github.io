@@ -1,0 +1,182 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); color: var(--color-text-primary); background: transparent; }
+
+  nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    position: sticky; top: 0;
+    background: var(--color-background-primary);
+    z-index: 10;
+  }
+  .nav-logo { font-size: 15px; font-weight: 500; }
+  .nav-links { display: flex; gap: 8px; }
+  .nav-links a {
+    font-size: 14px; color: var(--color-text-secondary);
+    text-decoration: none; padding: 6px 12px;
+    border-radius: var(--border-radius-md);
+    border: 0.5px solid transparent;
+    transition: all 0.15s;
+  }
+  .nav-links a:hover { background: var(--color-background-secondary); color: var(--color-text-primary); }
+  .nav-links a.active { border-color: var(--color-border-secondary); color: var(--color-text-primary); }
+
+  .hero {
+    padding: 4rem 2rem 3rem;
+    max-width: 680px;
+  }
+  .hero-label {
+    font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--color-text-tertiary); margin-bottom: 1rem;
+  }
+  .hero h1 { font-size: 2rem; font-weight: 500; line-height: 1.2; margin-bottom: 1rem; }
+  .hero p { font-size: 15px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 2rem; max-width: 520px; }
+
+  .contact-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .contact-row a {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--color-text-secondary);
+    text-decoration: none; padding: 6px 12px;
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-md);
+    transition: all 0.15s;
+  }
+  .contact-row a:hover { border-color: var(--color-border-secondary); color: var(--color-text-primary); background: var(--color-background-secondary); }
+
+  .divider { height: 0.5px; background: var(--color-border-tertiary); margin: 0 2rem; }
+
+  .skills-section { padding: 2.5rem 2rem; }
+  .section-title { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-tertiary); margin-bottom: 1.25rem; }
+
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .skill-card {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 12px 14px;
+  }
+  .skill-card-label { font-size: 11px; color: var(--color-text-tertiary); margin-bottom: 4px; }
+  .skill-card-items { font-size: 13px; color: var(--color-text-secondary); line-height: 1.6; }
+
+  .projects-section { padding: 0 2rem 2.5rem; }
+  .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 1.25rem; }
+  .project-card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 1rem 1.25rem;
+    text-decoration: none; color: inherit;
+    transition: border-color 0.15s;
+    display: block;
+  }
+  .project-card:hover { border-color: var(--color-border-secondary); }
+  .project-card-icon { font-size: 20px; color: var(--color-text-tertiary); margin-bottom: 10px; }
+  .project-card-title { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+  .project-card-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+
+  .downloads-section { padding: 0 2rem 3rem; }
+  .download-row { display: flex; gap: 8px; margin-top: 1.25rem; flex-wrap: wrap; }
+  .download-btn {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; padding: 7px 14px;
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-md);
+    background: transparent; cursor: pointer; color: var(--color-text-secondary);
+    transition: all 0.15s; text-decoration: none;
+  }
+  .download-btn:hover { border-color: var(--color-border-secondary); color: var(--color-text-primary); background: var(--color-background-secondary); }
+
+  footer {
+    padding: 1.5rem 2rem;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 8px;
+  }
+  footer p { font-size: 12px; color: var(--color-text-tertiary); }
+</style>
+
+<h2 class="sr-only">Portfolio homepage for a data analyst job search, with navigation, skills, and project links.</h2>
+
+<nav>
+  <span class="nav-logo">Your Name</span>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="analysis.html">Data Analysis</a>
+    <a href="database.html">Database / SQL</a>
+    <a href="python.html">Python</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <p class="hero-label">Data Analyst · IT · Open to internships & entry-level</p>
+  <h1>Hi, I'm Your Name</h1>
+  <p>I'm a third-year university student studying [Your Major] with a focus on data analysis, SQL, and Python. I'm currently seeking internship or entry-level roles where I can turn data into decisions.</p>
+  <div class="contact-row">
+    <a href="mailto:you@email.com"><i class="ti ti-mail" aria-hidden="true"></i> you@email.com</a>
+    <a href="https://linkedin.com/in/yourprofile"><i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    <a href="https://github.com/yourusername"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="skills-section">
+  <p class="section-title">Skills</p>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <p class="skill-card-label">Data & Analysis</p>
+      <p class="skill-card-items">Python, Pandas, SQL, Tableau, Excel</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-card-label">Databases</p>
+      <p class="skill-card-items">SQLite, MySQL, CRUD operations, schema design</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-card-label">Programming</p>
+      <p class="skill-card-items">Python, JavaScript, HTML/CSS</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-card-label">Tools</p>
+      <p class="skill-card-items">Git, GitHub, VS Code, Jupyter</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="projects-section">
+  <p class="section-title">Projects</p>
+  <div class="projects-grid">
+    <a class="project-card" href="analysis.html">
+      <div class="project-card-icon"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
+      <p class="project-card-title">Data Analysis</p>
+      <p class="project-card-desc">Tableau dashboard and analysis for a real company dataset</p>
+    </a>
+    <a class="project-card" href="database.html">
+      <div class="project-card-icon"><i class="ti ti-database" aria-hidden="true"></i></div>
+      <p class="project-card-title">Database / SQL</p>
+      <p class="project-card-desc">Live CRUD demo with SQL queries running in the browser</p>
+    </a>
+    <a class="project-card" href="python.html">
+      <div class="project-card-icon"><i class="ti ti-code" aria-hidden="true"></i></div>
+      <p class="project-card-title">Python</p>
+      <p class="project-card-desc">Downloadable scripts plus a live in-browser Python demo</p>
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="downloads-section">
+  <p class="section-title">Downloads</p>
+  <div class="download-row">
+    <a class="download-btn" href="resume.pdf" download><i class="ti ti-download" aria-hidden="true"></i> Resume (PDF)</a>
+    <a class="download-btn" href="excel-sample.xlsx" download><i class="ti ti-table" aria-hidden="true"></i> Excel Sample</a>
+  </div>
+</section>
+
+<footer>
+  <p>Your Name · youruni.edu · [Year] expected graduation</p>
+  <p>Built with HTML, CSS & JavaScript</p>
+</footer>

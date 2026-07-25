@@ -62,6 +62,17 @@
       border-color: var(--border);
       color: var(--text);
     }
+
+    .tableau-container {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    
+    .tableau-container iframe {
+      width: 100%;
+      border: none;
+    }
  
     /* ── Hero ── */
     .hero {
@@ -72,6 +83,7 @@
     .hero-analysis {
       padding: 4rem 2rem 3rem;
       max-width: 1680px;
+     padding-top: 10px;
     }
  
  

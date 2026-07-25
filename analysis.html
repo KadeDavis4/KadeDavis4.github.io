@@ -12,7 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
 <nav>
   <span class="nav-logo">Kade Davis</span>
   <div class="nav-links">
@@ -27,7 +29,7 @@
 <div class="skill-card">
       <h4 class="skill-card-label">Business Questions</h4>
       <h3 class="skill-card-items">
-        How does occupancy change seasonally and what can we learn from it?<br>
+        How does Airbnb occupancy change seasonally and what can we learn from it?<br>
         Which neighborhoods are oversaturated or undersupplied?<br>
         How many new hosts are entering into each neighbourhood? Are hosts entering in the right ones?
       </h3>
@@ -58,7 +60,7 @@
       The southern neighborhoods show both above average occupancy and above average pricing despite not being typically popular areas. 
       This suggests unmet demand that can be aided by host recruitment. 
       Magnolia also seems to have very high demand while being a popular area, however we can see the host increase matches this need already.</p>
-    <p><b>Some host growth is concetrated in saturated areas: </b>
+    <p><b>Some host growth is concentrated in saturated areas: </b>
       We can see that Lake City, Northgate, Interbay, Delridge, and the University District have high host increases despite fairly low demand indicators. 
       This coupled with the fact that some areas being undersupplied means that new hosts are entering areas that are statistically worse for new competetion, and could use direction.</p>
   </div>
@@ -71,8 +73,16 @@
 
   <section class="hero-analysis">
   <h2>Process</h2>
-    <p>To create this analysis, I first had to find a public Airbnb database and install general data from 2025 and 2026, calendar data, and geographic data. I then used python with the pandas library to organize the data into 2 usable csv files, one for general data joined with neighborhood data, and one for calendar data, also joined with neighborhood data.
-    I put these 2 files and a the geographic data into tableau, and carefully designed the dashboard above with a goal of balancing detail with usable and readable information.</p>
+    <p>To create this analysis, I first sourced public data from InsideAirbnb, 
+pulling listings and calendar data from 2025 and 2026, as well as
+neighborhood geographic data. Using Python and pandas, I processed the raw 
+compressed files, deriving occupancy rates from availability data, cleaning 
+price strings to numeric values, creating a host delta metric by comparing 
+listing counts across years, and aggregating everything to neighborhood level. 
+I then dissolved geographic data into district level boundaries 
+using geopandas, before merging the result with the cleaned data into a single geojson 
+for mapping. The final dashboard was built in Tableau, designed to balance 
+valuable detail with readability and simplicity in a single interactive view. </p>
 </section>
 
 

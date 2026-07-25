@@ -69,22 +69,47 @@
       margin-bottom: 2rem;
     }
     
-    .tableau-container iframe {
-      width: 100%;
-      border: none;
+    .analysis-layout {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
     }
- 
-    /* ── Hero ── */
-    .hero {
-      padding: 4rem 2rem 3rem;
-      max-width: 680px;
+    
+    .tableau-container {
+      flex: 2;
+      min-width: 0;
     }
-
-    .hero-analysis {
-      padding: 4rem 2rem 3rem;
-      max-width: 1680px;
-     padding-top: 10px;
+    
+    .analysis-text {
+      flex: 1;
+      min-width: 240px;
+      padding-top: 0.5rem;
     }
+    
+    .analysis-text h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    
+    .analysis-text p {
+      font-size: 14px;
+      color: #6b6b6b;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+     
+        /* ── Hero ── */
+        .hero {
+          padding: 4rem 2rem 3rem;
+          max-width: 680px;
+        }
+    
+        .hero-analysis {
+          padding: 4rem 2rem 3rem;
+          max-width: 1680px;
+         padding-top: 10px;
+        }
  
  
     .hero-label {

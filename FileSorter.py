@@ -13,7 +13,7 @@ def define_files():
     """
     files = []
     for i in (os.listdir()):
-        if i == "361MainProgram.py":
+        if i == "FileSorter.py":
             continue
 
         filepath = i

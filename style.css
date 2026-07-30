@@ -10,6 +10,8 @@
       --radius-sm: 6px;
       --radius-md: 8px;
       --radius-lg: 12px;
+      --accent: #6d4fa0;
+      --accent-subtle: #f3f0f8;
     }
  
     body {
@@ -36,6 +38,7 @@
     .nav-logo {
       font-size: 15px;
       font-weight: 500;
+      color: var(--accent);
     }
  
     .nav-links {
@@ -45,7 +48,7 @@
  
     .nav-links a {
       font-size: 14px;
-      color: var(--text-muted);
+      color: var(--accent-subtle);
       text-decoration: none;
       padding: 6px 12px;
       border-radius: var(--radius-md);
@@ -55,12 +58,12 @@
  
     .nav-links a:hover {
       background: var(--bg-subtle);
-      color: var(--text);
+      color: var(--accent);
     }
  
     .nav-links a.active {
-      border-color: var(--border);
-      color: var(--text);
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .tableau-container {
@@ -101,8 +104,9 @@
      
         /* ── Hero ── */
         .hero {
-          padding: 4rem 2rem 3rem;
+          padding: 3rem 2rem 3rem;
           max-width: 680px;
+          color: var(--accent);
         }
     
         .hero-analysis {
@@ -120,11 +124,12 @@
       margin-bottom: 1rem;
     }
  
-    .hero h1 {
-      font-size: 2rem;
+    .hero h2 {
+      font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.2;
       margin-bottom: 1rem;
+      color: var(--accent); 
     }
  
     .hero p {
@@ -189,7 +194,7 @@
     }
  
     .skill-card {
-      background: var(--bg-subtle);
+      background: var(--accent-subtle);
       border-radius: var(--radius-md);
       padding: 12px 14px;
     }
@@ -225,7 +230,7 @@
     }
  
     .project-card:hover {
-      border-color: #bbb;
+      border-color: var(--accent);
     }
  
     .project-card-icon {

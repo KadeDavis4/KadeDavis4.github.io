@@ -12,6 +12,7 @@
       --radius-lg: 12px;
       --accent: #6d4fa0;
       --accent-subtle: #f3f0f8;
+      --accent-light: #7a5aa6;
     }
  
     body {
@@ -48,7 +49,7 @@
  
     .nav-links a {
       font-size: 14px;
-      color: var(--accent-subtle);
+      color: var(--accent-light);
       text-decoration: none;
       padding: 6px 12px;
       border-radius: var(--radius-md);
@@ -182,7 +183,7 @@
       font-size: 11px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--text-faint);
+      color: var(--accent-light);
       margin-bottom: 1.25rem;
     }
  
@@ -294,7 +295,7 @@
  
     footer p {
       font-size: 12px;
-      color: var(--accent-subtle);
+      color: var(--accent-light);
     }
 
 @media (max-width: 768px) {

@@ -173,6 +173,13 @@
       background: var(--border);
       margin: 0 2rem;
     }
+
+    .divider-db{
+      height: 1px;
+      background: var(--border);
+      margin: 0 2rem;
+      padding: 1rem 1rem 1rem;
+    }
  
     /* ── Section shared ── */
     .section {

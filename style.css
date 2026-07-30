@@ -58,13 +58,14 @@
     }
  
     .nav-links a:hover {
-      background: var(--bg-subtle);
+      background: var(--accent-subtle);
       color: var(--accent);
     }
  
     .nav-links a.active {
       border-color: var(--accent);
       color: var(--accent);
+      background: var(--accent-subtle);
     }
 
     .tableau-container {

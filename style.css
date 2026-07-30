@@ -288,6 +288,83 @@
       color: var(--text);
       background: var(--bg-subtle);
     }
+
+    /* ── Python demo cards ── */
+    .demo-grid {
+      display: flex;
+      align-items: stretch;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .demo-card {
+      display: flex;
+      flex: 1 1 260px;
+      gap: 1rem;
+    }
+    
+    .demo-media {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      width: 120px;
+      flex-shrink: 0;
+    }
+    
+    .demo-thumb {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: var(--bg-subtle);
+    }
+    
+    .demo-download {
+      justify-content: center;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .demo-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+    }
+    
+    .demo-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+    }
+    
+    .demo-desc {
+      margin: 0;
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    
+    .demo-divider {
+      width: 1px;
+      align-self: stretch;
+      background: var(--border);
+    }
+    
+    @media (max-width: 768px) {
+      .demo-grid { flex-direction: column; }
+      .demo-divider { width: 100%; height: 1px; align-self: auto; }
+    }
+    
+    @media (max-width: 500px) {
+      .demo-card { flex-direction: column; }
+      .demo-media { width: 100%; max-width: 200px; }
+    }
+
+
+
  
     /* ── Footer ── */
     footer {

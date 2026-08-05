@@ -2,10 +2,8 @@ import os
 import shutil
 import tkinter as tk
 import threading
-import requests
-from flask import Flask, jsonify
+from datetime import datetime
 
-app = Flask(__name__)
 
 def define_files():
     """
@@ -394,14 +392,8 @@ select_button(button2, "Standard")
 submitButton = tk.Button(window, text="Sort", font=("Arial", 24), command=areYouSureWindow)
 submitButton.place(x=300, y=700, width=450)
 
-
-dateLabel = tk.Label(window, text=f"Date: {requests.get('http://localhost:5008/date').json()['date']}", font=("Arial", 14, 'bold'))
+dateLabel = tk.Label(window, text=f"Date: {datetime.now().date()}", font=("Arial", 14, 'bold'))
 dateLabel.place(x=20, y=20)
-
-
-folderSizeLabel = tk.Label(window, text=f"Folder Size: {requests.get('http://localhost:5007/folder-size', params={'path': os.getcwd()}).json()['folder_size_mb']}mb", font=("Arial", 14, 'bold'))
-folderSizeLabel.place(x=600, y=20)
-
 
 undoButton = tk.Button(window, text="Undo", font=("Arial", 24), command=undo_sorting)
 undoButton.place(x=50, y=700, width=200)
@@ -409,16 +401,7 @@ undoButton.place(x=50, y=700, width=200)
 
 
 
-
-
-
-
-
 if __name__ == "__main__":
-    flask_thread = threading.Thread(target=lambda: app.run(port=5007))
-    flask_thread.daemon = True
-    flask_thread.start()
-
     window.mainloop()
 
 

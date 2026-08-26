@@ -266,7 +266,33 @@
       gap: 8px;
       flex-wrap: wrap;
     }
- 
+
+    .download-split {
+      display: flex;
+      gap: 2rem;
+      align-items: stretch;;
+    }
+
+    .download-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    
+    
+    .download-group-title {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #cabde6;
+    }
+    
+    .download-split-divider {
+      width: 1px;
+      background: #cabde6;
+      align-self: stretch;
+    }
+
     .download-btn {
       display: flex;
       align-items: center;

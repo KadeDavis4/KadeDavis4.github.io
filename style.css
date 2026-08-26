@@ -270,7 +270,7 @@
     .download-split {
       display: flex;
       gap: 2rem;
-      align-items: stretch;;
+      align-items: stretch;
     }
 
     .download-group {

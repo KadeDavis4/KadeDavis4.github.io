@@ -285,12 +285,13 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #cabde6;
+      margin-bottom: 1.25rem;
     }
     
     .download-split-divider {
       width: 1px;
       background: #cabde6;
-      grid-row: stretch;
+      align-self: stretch;
     }
 
     .download-btn {

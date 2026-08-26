@@ -290,7 +290,7 @@
     
     .download-split-divider {
       width: 1px;
-      background: #cabde6;
+      background: var(--border);
       align-self: stretch;
     }
 

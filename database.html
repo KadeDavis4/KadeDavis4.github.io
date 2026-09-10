@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sql.js@1.14.0/dist/sql-wasm.js"></script>
 
 <nav>
   <span class="nav-logo">Kade Davis</span>
@@ -33,3 +34,14 @@
     <h3 style="color: #1a1a1a">Coming Soon</h3>
   </div>
 </section>
+
+
+<script>
+  async function initDb() {
+    const SQL = await initSqlJs({
+      locateFile: file => `https://cdn.jsdelivr.net/npm/sql.js@1.14.0/dist/${file}`
+    });
+    const db = new SQL.Database();
+    return db;
+  }
+</script>

@@ -87,7 +87,7 @@ def extract_file(path, include_tables):
         all_tables = []
         for page in pdf.pages:
             pages += 1
-            text += f"\n----Page {page}----\n"
+            text += f"\n----Page {pages}----\n"
             text += page.extract_text() or ""
             if include_tables:
                 tables = page.extract_tables()

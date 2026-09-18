@@ -444,6 +444,8 @@ def confirmation_window(name1, name2, path, mode, skipped, matched=None, left=No
     #Report any skipped files after folder concatenating
     if skipped > 0:
         subtitle=f"{skipped} corrupted or empty csv files skipped"
+    else:
+        subtitle=""
 
     #Report matching numbers after merging
     if mode == "merged":

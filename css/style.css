@@ -346,7 +346,7 @@
     }
     
     .demo-thumb {
-      width: 100%;
+      width: 110%;
       aspect-ratio: 3 / 4;
       object-fit: cover;
       border-radius: var(--radius-lg);

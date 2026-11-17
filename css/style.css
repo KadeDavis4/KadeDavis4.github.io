@@ -110,7 +110,6 @@
      
         /* ── Hero ── */
         .hero {
-          padding: 3rem 2rem 3rem;
           max-width: 680px;
           color: var(--accent);
         }

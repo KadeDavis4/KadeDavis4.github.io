@@ -116,7 +116,37 @@
           max-width: 1680px;
          padding-top: 10px;
         }
- 
+
+     .hero-home {
+       max-width: none;
+       gap: 2.5rem;
+       color: var(--accent);
+       display: flex;
+       align-items: flex-start;
+     }
+
+     .hero-main {
+       flex: 1 1 500px;
+       min-width: 0;
+     }
+     .hero-card {
+       flex: 0 1 380px;
+       background: var(--accent-subtle);
+       border-radius: var(--radius-md);
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+     }
+
+     .hero-card-row{
+        border-top: 1px solid var(--border);
+        padding-top: 10px;
+     }
+
+      .hero-card p {
+        margin-bottom: 0;
+        max-width: none;
+     }
  
     .hero-label {
       font-size: 12px;
@@ -420,5 +450,14 @@
 @media (max-width: 768px) {
   .analysis-layout {
     flex-direction: column;
+  }
+
+  .hero-home {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hero-card {
+    width: 100%;
+    flex-basis: auto;
   }
 }

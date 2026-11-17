@@ -110,6 +110,7 @@
      
         /* ── Hero ── */
         .hero {
+          padding: 3rem 2rem 3rem;
           max-width: 680px;
           color: var(--accent);
         }
@@ -155,7 +156,7 @@
      }
 
      .hero-main {
-       flex: 0 1 500px;
+       flex: 0 1 600px;
        min-width: 0;
      }
      .hero-card {

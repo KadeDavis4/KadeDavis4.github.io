@@ -178,6 +178,19 @@
         margin-bottom: 0;
         max-width: none;
      }
+
+      .hero .hero-card .skill-card-label {
+        font-size: 11px;
+        color: var(--text-faint);
+        margin-bottom: 2px;
+      }
+      .hero .hero-card .skill-card-items {
+        font-size: 13px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+/* ── Contact Row ── */
     .contact-row {
       display: flex;
       gap: 8px;

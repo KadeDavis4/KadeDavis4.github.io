@@ -156,17 +156,19 @@
      }
 
      .hero-main {
-       flex: 1 1 500px;
+       flex: 0 1 500px;
        min-width: 0;
      }
      .hero-card {
-       flex: 0 1 380px;
-       background: var(--accent-subtle);
+       flex: 0 1 700px;
+       background: var(--bg-subtle);
        border-radius: var(--radius-md);
-       display: flex;
-       flex-direction: column;
-       gap: 10px;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       column-gap: 28px;
+       row-gap: 14px;
        padding: 14px 16px;
+       margin-left: auto
      }
 
      .hero-card-row{
@@ -177,6 +179,7 @@
       .hero .hero-card p {
         margin-bottom: 0;
         max-width: none;
+        color: var(--accent-light);
      }
 
       .hero .hero-card .skill-card-label {

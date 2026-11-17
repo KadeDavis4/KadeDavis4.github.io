@@ -68,6 +68,10 @@
       background: var(--accent-subtle);
     }
 
+    [hidden] {
+      display: none !important;
+    }
+
     .tableau-container {
       width: 100%;
       overflow: hidden;
